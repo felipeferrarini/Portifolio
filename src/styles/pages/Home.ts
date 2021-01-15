@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 100%;
+  width: 100%;
   color: #fff;
   height: calc(100vh - 70px);
   padding-left: max(15vw, 10px);
@@ -18,6 +18,7 @@ export const Container = styled.div`
   @media all and (max-width: 768px) {
     padding-left: 0;
     align-items: center;
+    text-align: center;
   }
 
   h1 {
@@ -52,7 +53,10 @@ export const Nav = styled.div`
     list-style: none;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 0;
+    margin-top: 0;
 
     li {
       margin-right: 20px;
@@ -63,8 +67,11 @@ export const Nav = styled.div`
         height: 2px;
         transition: all 0.2s;
         border-radius: 1px;
-        animation: fadeOut 0.3s;
         margin-top: 1px;
+      }
+
+      #border {
+        animation: fadeOut 0.3s;
       }
 
       #borderActive {

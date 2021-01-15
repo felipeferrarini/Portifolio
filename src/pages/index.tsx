@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import { Container, Nav, Social } from '../styles/Home';
+import { Container, Nav, Social } from '../styles/pages/Home';
 import Link from 'next/link';
 import {
   FaFacebookF,
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   const router = useRouter();
 
   return (
-    <Container>
+    <Container className="page">
       <Head>
         <title>Felipe de Abreu Ferrarini | Portifólio</title>
         <link rel="icon" href="/favicon.ico" />
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
         <span>Developer | Computer Engineering Student</span>
       </h2>
 
-      <Nav>
+      <Nav id="nav">
         <ul>
           <li>
             <Link href="/">Inicio</Link>

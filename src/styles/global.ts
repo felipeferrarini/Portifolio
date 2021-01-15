@@ -5,7 +5,23 @@ export default createGlobalStyle`
     --roxo: #7159D1;
     --roxoEscuro: #3C4393;
     --verde: #04d361;
-    --preto: #222;
+    --preto: #000;
+  }
+
+  .page{
+    animation: fadeIn3 0.5s;
+    position: absolute;
+  }
+
+  @keyframes fadeIn3{
+    0%{
+      opacity: 0;
+      top: 40px;
+    }
+    100%{
+      opacity: 1;
+      top: 0px;
+    }
   }
 
   *{

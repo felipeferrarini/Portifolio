@@ -27,7 +27,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <Head>
         <link rel="stylesheet" type="text/css" href="/nprogress.css" />
       </Head>
-
+      <Header />
       <Component {...pageProps} />
       <GlobalStyle />
     </ThemeProvider>
