@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   :root {
+    --azul: #3C4393;
     --roxo: #7159D1;
-    --roxoEscuro: #3C4393;
     --verde: #04d361;
     --preto: #000;
   }
@@ -29,7 +29,7 @@ export default createGlobalStyle`
 
     ::selection {
       color: #fff;
-      background-color: var(--preto);
+      background-color: var(--roxo);
     }
   }
 

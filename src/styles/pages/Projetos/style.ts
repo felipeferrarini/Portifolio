@@ -51,33 +51,7 @@ export const Container = styled.div`
       margin: 0 30px;
     }
 
-    #sobre {
-      margin: 0 30px;
-
-      h3 {
-        color: var(--verde);
-        font-size: 25px;
-      }
-
-      ul,
-      li {
-        margin: 0;
-        padding: 0;
-      }
-
-      li {
-        list-style: none;
-        color: var(--verde);
-        font-size: 18px;
-        margin-bottom: 20px;
-
-        span {
-          color: #fff;
-        }
-      }
-    }
-
-    #interesses {
+    #projetos {
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
       width: calc(100% - 40px);

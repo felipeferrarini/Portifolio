@@ -46,14 +46,6 @@ const Home: React.FC = () => {
             ></div>
           </li>
           <li>
-            <Link href="/Certificados">Certificados</Link>
-            <div
-              id={`border${
-                router.pathname === '/Certificados' ? 'Active' : ''
-              }`}
-            ></div>
-          </li>
-          <li>
             <Link href="/Projetos">Projetos</Link>
             <div
               id={`border${router.pathname === '/Projetos' ? 'Active' : ''}`}

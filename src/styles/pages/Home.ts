@@ -24,6 +24,7 @@ export const Container = styled.div`
   h1 {
     font-size: max(min(2.5vw, 3vw), 2rem);
     margin: 10px;
+    margin-left: 20px;
     cursor: pointer;
     font-weight: 700;
   }
@@ -31,6 +32,7 @@ export const Container = styled.div`
   h2 {
     line-height: 2;
     margin: 10px;
+    margin-left: 20px;
     font-size: max(1.5vw, 1.2rem);
     font-weight: 400;
 
@@ -43,6 +45,17 @@ export const Container = styled.div`
 
 export const Nav = styled.div`
   margin: 10px;
+  margin-left: 20px;
+  animation: HeaderIn 0.5s;
+
+  @keyframes HeaderIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   @media all and (max-width: 768px) {
     display: none;
@@ -121,6 +134,7 @@ export const Social = styled.div`
   display: flex;
   flex-direction: row;
   margin: 10px;
+  margin-left: 20px;
 
   a {
     text-decoration: none;

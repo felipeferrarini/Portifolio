@@ -6,35 +6,30 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  width: calc(100vw - max(30vw, 20px));
+  width: 70vw;
   position: fixed;
   top: 0px;
   z-index: 200;
   color: #fff;
-  padding-left: max(15vw, 10px);
-  padding-right: max(15vw, 10px);
+  padding-left: 15vw;
+  padding-right: 15vw;
   animation: HeaderIn 0.5s;
   transition: all 0.2s;
+  background-color: #000;
 
   @keyframes HeaderIn {
     from {
-      height: 80vh;
       opacity: 0;
     }
     to {
-      height: 70px;
       opacity: 1;
     }
   }
 
   @media all and (max-width: 1440px) {
-    width: calc(100vw - max(20vw, 20px));
-    padding-left: max(10vw, 10px);
-    padding-right: max(10vw, 10px);
-  }
-
-  @media all and (max-width: 910px) {
-    flex-direction: column;
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 
   @media all and (max-width: 768px) {
@@ -48,18 +43,25 @@ export const Container = styled.div`
   h1 {
     font-size: 35px;
     margin: 10px;
+    margin-left: 30px;
     cursor: pointer;
     font-weight: 700;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: HeaderIn 0.5s;
 
     @media all and (max-width: 1440px) {
       font-size: 30px;
     }
 
+    @media all and (max-width: 910px) {
+      display: none;
+    }
+
     @media all and (max-width: 768px) {
+      display: flex;
       font-size: min(10vw, 20px);
       margin-top: 15px;
     }
@@ -79,7 +81,7 @@ export const SideMenuButtton = styled.div`
     border: none;
     height: 40px;
     width: 40px;
-    font-size: 20px;
+    font-size: 25px;
     color: #fff;
     background-color: transparent;
   }
@@ -106,7 +108,7 @@ export const NavMobile = styled.div.attrs((props: NavMobileProps) => ({
   justify-content: flex-start;
   height: 100vh;
   width: 70vw;
-  position: fixed;
+  position: relative;
   top: 0px;
   left: 0px;
   z-index: 300;
@@ -114,6 +116,7 @@ export const NavMobile = styled.div.attrs((props: NavMobileProps) => ({
   padding-left: 20px;
   animation: navIn 0.3s;
   transition: all 0.2s;
+  overflow-y: auto;
 
   @keyframes navIn {
     from {

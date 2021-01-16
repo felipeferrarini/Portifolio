@@ -3,7 +3,7 @@ import {
   Container,
   NavMobile,
   SideMenuButtton
-} from '../styles/pages/components/Header';
+} from '../styles/components/Header';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Nav } from '../styles/pages/Home';
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      {router.pathname === '/' && (
+      <Container>
         <SideMenuButtton>
           <button id="sideMenu" onClick={() => setMobile(true)}>
             <FaBars />
@@ -34,77 +34,56 @@ const Header: React.FC = () => {
             ></button>
           )}
         </SideMenuButtton>
-      )}
 
-      {router.pathname !== '/' && (
-        <Container>
-          <SideMenuButtton>
-            <button id="sideMenu" onClick={() => setMobile(true)}>
-              <FaBars />
-            </button>
+        {router.pathname !== '/' && (
+          <>
+            <Link href="/">
+              <h1>Felipe de Abreu Ferrarini</h1>
+            </Link>
 
-            {mobile && (
-              <button
-                id="sideMenuOut"
-                onClick={() => {
-                  setMobile(false);
-                }}
-              ></button>
-            )}
-          </SideMenuButtton>
-
-          <Link href="/">
-            <h1>Felipe de Abreu Ferrarini</h1>
-          </Link>
-
-          <Nav>
-            <ul>
-              <li>
-                <Link href="/">Inicio</Link>
-                <div
-                  id={`border${router.pathname === '/' ? 'Active' : ''}`}
-                ></div>
-              </li>
-              <li>
-                <Link href="/Sobre">Sobre</Link>
-                <div
-                  id={`border${router.pathname === '/Sobre' ? 'Active' : ''}`}
-                ></div>
-              </li>
-              <li>
-                <Link href="/Curriculo">Curriculo</Link>
-                <div
-                  id={`border${
-                    router.pathname === '/Curriculo' ? 'Active' : ''
-                  }`}
-                ></div>
-              </li>
-              <li>
-                <Link href="/Certificados">Certificados</Link>
-                <div
-                  id={`border${
-                    router.pathname === '/Certificados' ? 'Active' : ''
-                  }`}
-                ></div>
-              </li>
-              <li>
-                <Link href="/Projetos">Projetos</Link>
-                <div
-                  id={`border${
-                    router.pathname === '/Projetos' ? 'Active' : ''
-                  }`}
-                ></div>
-              </li>
-              <li>
-                <Link href="/Contato">Contato</Link>
-                <div
-                  id={`border${router.pathname === '/Contato' ? 'Active' : ''}`}
-                ></div>
-              </li>
-            </ul>
-          </Nav>
-        </Container>
-      )}
+            <Nav>
+              <ul>
+                <li>
+                  <Link href="/">Inicio</Link>
+                  <div
+                    id={`border${router.pathname === '/' ? 'Active' : ''}`}
+                  ></div>
+                </li>
+                <li>
+                  <Link href="/Sobre">Sobre</Link>
+                  <div
+                    id={`border${router.pathname === '/Sobre' ? 'Active' : ''}`}
+                  ></div>
+                </li>
+                <li>
+                  <Link href="/Curriculo">Curriculo</Link>
+                  <div
+                    id={`border${
+                      router.pathname === '/Curriculo' ? 'Active' : ''
+                    }`}
+                  ></div>
+                </li>
+                <li>
+                  <Link href="/Projetos">Projetos</Link>
+                  <div
+                    id={`border${
+                      router.pathname === '/Projetos' ? 'Active' : ''
+                    }`}
+                  ></div>
+                </li>
+                <li>
+                  <Link href="/Contato">Contato</Link>
+                  <div
+                    id={`border${
+                      router.pathname === '/Contato' ? 'Active' : ''
+                    }`}
+                  ></div>
+                </li>
+              </ul>
+            </Nav>
+          </>
+        )}
+      </Container>
 
       {mobile && (
         <NavMobile>
@@ -129,14 +108,6 @@ const Header: React.FC = () => {
               <Link href="/Curriculo">Curriculo</Link>
               <div
                 id={`border${router.pathname === '/Curriculo' ? 'Active' : ''}`}
-              ></div>
-            </li>
-            <li>
-              <Link href="/Certificados">Certificados</Link>
-              <div
-                id={`border${
-                  router.pathname === '/Certificados' ? 'Active' : ''
-                }`}
               ></div>
             </li>
             <li>
