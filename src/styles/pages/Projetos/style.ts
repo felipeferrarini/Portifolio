@@ -15,6 +15,7 @@ export const Container = styled.div`
     align-items: flex-start;
     width: 70vw;
     background-color: #000;
+    margin-bottom: 20px;
 
     @media all and (max-width: 1440px) {
       width: 80vw;
@@ -55,9 +56,7 @@ export const Container = styled.div`
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
       width: calc(100% - 40px);
-      margin-left: 20px;
-      margin-bottom: 20px;
-      margin-right: 20px;
+      margin: 20px;
       justify-items: center;
 
       @media all and (max-width: 1000px) {
@@ -75,21 +74,88 @@ export const Container = styled.div`
       #item {
         background-color: rgba(255, 255, 255, 0.1);
         margin: 10px 10px;
-        height: 80px;
-        width: 90%;
+        height: 345px;
+        width: calc(90% - 5px);
         transition: all 0.2s;
         font-size: 18px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
+        padding: 5px;
 
         :hover {
-          background-color: rgba(255, 255, 255, 0.2);
+          background-color: var(--roxo);
+
+          #icon {
+            background-color: #fff;
+
+            ::before {
+              background: var(--verde);
+            }
+
+            svg {
+              color: var(--verde);
+            }
+          }
         }
 
-        svg {
-          font-size: 30px;
-          margin: 20px;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 22px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+
+        #type {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        #tecnology {
+          font-size: 15px;
+        }
+
+        span {
+          text-align: center;
+        }
+
+        #icon {
+          height: 60px;
+          width: 60px;
+          background-color: var(--verde);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          position: relative;
+          z-index: 10;
+          transition: all 0.2s;
+          margin-top: 80px;
+          transform-style: preserve-3d;
+
+          svg {
+            margin: 0;
+            padding: 0;
+            transition: all 0.2s;
+            font-size: 30px;
+          }
+
+          ::before {
+            position: absolute;
+            content: '';
+            left: -8px;
+            top: -8px;
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 5px;
+            transition: all 0.2s;
+            transform: translateZ(-1px);
+            z-index: 1;
+          }
         }
       }
     }

@@ -15,6 +15,7 @@ export const Container = styled.div`
     align-items: flex-start;
     width: 70vw;
     background-color: #000;
+    margin-bottom: 20px;
 
     @media all and (max-width: 1440px) {
       width: 80vw;
@@ -73,6 +74,7 @@ export const Container = styled.div`
 
         span {
           color: #fff;
+          line-height: 1.5;
         }
       }
     }
@@ -116,6 +118,7 @@ export const Container = styled.div`
         svg {
           font-size: 30px;
           margin: 20px;
+          padding: 0px;
         }
       }
     }

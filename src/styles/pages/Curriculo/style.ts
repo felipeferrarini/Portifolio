@@ -15,6 +15,7 @@ export const Container = styled.div`
     align-items: flex-start;
     width: 70vw;
     background-color: #000;
+    margin-bottom: 20px;
 
     @media all and (max-width: 1440px) {
       width: 80vw;

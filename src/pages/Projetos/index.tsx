@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import { BsCardHeading } from 'react-icons/bs';
 import { Container } from '../../styles/pages/Projetos/style';
 
 const Projetos: React.FC = () => {
@@ -59,9 +60,22 @@ const Projetos: React.FC = () => {
         <div id="projetos">
           {projects.map((project, index) => (
             <div id="item" key={index}>
-              <span> {project.nome}</span>
-              <span>{project.type}</span>
-              <span>{project.tecnology.map(item => item + ' | ')}</span>
+              <div id="icon">
+                <BsCardHeading />
+              </div>
+              <a href={project.link} rel="noreferrer" target="_blank">
+                <span id="nome"> {project.nome}</span>
+              </a>
+              <span id="type">{project.type}</span>
+              <span id="tecnology">
+                {project.tecnology.map((item, intemKey) => {
+                  if (intemKey !== project.tecnology.length - 1) {
+                    return item + ' | ';
+                  } else {
+                    return item;
+                  }
+                })}
+              </span>
             </div>
           ))}
         </div>
