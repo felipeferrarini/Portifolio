@@ -47,7 +47,7 @@ const Sobre: React.FC = () => {
               <span>
                 Atualmente sou estudante de Engenharia da Computação na UCL -
                 Faculdade do Centro Leste (Manguinhos, Serra - ES) e faço
-                estágio na Vale apoiando nas disversas áres de PCM. Voltado para
+                estágio na Vale apoiando nas diversas áreas de PCM. Voltado para
                 a área de tecnologia, trabalho com Automatização de processos e
                 Criação de robôs para modificações em massa no sistema da
                 empresa.
