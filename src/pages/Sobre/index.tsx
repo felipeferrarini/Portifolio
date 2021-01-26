@@ -67,9 +67,9 @@ const Sobre: React.FC = () => {
               <FaAngleRight />
               <span>
                 Já desenvolvi projetos para Web e Mobile utilizando tecnologias
-                como Javascript, CSS, ReactJS, React Native para o FrontEnd e
-                Python, Banco de Dados SQL e NOSQL, Django Framework para o
-                BackEnd.
+                como Javascript, CSS, ReactJS, NextJs, Styled Components, React
+                Native para o FrontEnd e Python, Banco de Dados SQL e NOSQL,
+                Django Framework para o BackEnd.
               </span>
             </li>
           </ul>
