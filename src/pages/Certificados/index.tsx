@@ -9,6 +9,11 @@ const Certificados: React.FC = () => {
       nome: 'Conceitos de responsividade e experiência do usuário',
       origin: 'Digital Innovation One',
       link: 'https://certificates.digitalinnovation.one/D4214D15'
+    },
+    {
+      nome: 'Desenvolvimento avançado com JavaScript ES6',
+      origin: 'Digital Innovation One',
+      link: 'https://certificates.digitalinnovation.one/15CECA7A'
     }
   ];
   return (

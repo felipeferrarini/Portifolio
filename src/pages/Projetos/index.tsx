@@ -19,12 +19,6 @@ const Projetos: React.FC = () => {
       ]
     },
     {
-      nome: 'BUSATO PCM',
-      type: 'Mobile App',
-      link: '',
-      tecnology: ['Kodular', 'Firebase']
-    },
-    {
       nome: 'Controle de Pousada',
       type: 'Desktop App',
       link: 'https://github.com/felipeferrarini/ControlePousada',
@@ -41,6 +35,12 @@ const Projetos: React.FC = () => {
         'Material UI',
         'Styled Components'
       ]
+    },
+    {
+      nome: 'Alura Quiz',
+      type: 'Web App',
+      link: 'https://github.com/felipeferrarini/supernaturalquiz',
+      tecnology: ['Nextjs', 'ReactJs', 'TypeScript', 'Styled Components']
     }
   ];
   return (
