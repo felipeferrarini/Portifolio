@@ -19,6 +19,19 @@ const Projetos: React.FC = () => {
       ]
     },
     {
+      nome: 'Estique.se - NLW#4',
+      type: 'Web App',
+      link: 'https://github.com/felipeferrarini/estique-se',
+      tecnology: [
+        'Nextjs',
+        'ReactJs',
+        'TypeScript',
+        'Material UI',
+        'Styled Components',
+        'Firebase'
+      ]
+    },
+    {
       nome: 'Controle de Pousada',
       type: 'Desktop App',
       link: 'https://github.com/felipeferrarini/ControlePousada',
